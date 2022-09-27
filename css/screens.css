@@ -4,7 +4,11 @@ header {
     font-size: 200%;
 }
 
-p {
+h1 {
     color:yellowgreen;
     text-align: center;
+}
+
+.mainheader {
+    outline-width: 100px;
 }
