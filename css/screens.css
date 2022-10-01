@@ -1,5 +1,6 @@
 html {
-    background-color: #037ffc;
+    background: rgb(60,110,113);
+    background: radial-gradient(circle, rgba(60,110,113,1) 0%, rgba(40,75,99,1) 100%);
 }
 
 body {
@@ -11,7 +12,7 @@ img {
     height: 50%;
 }
 
-/* Banner Overlay*/
+/* Banner Overlay
 .image-banner {
     position: relative;
 }
@@ -28,16 +29,14 @@ img {
     background-color: rgba(0, 0, 0, .5);
     padding: 15px 25px;
 }
-/* Banner Overlay End*/
+ Banner Overlay End*/
 
 .container {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
-    background-color: aliceblue;
-    padding-left: 40px;
-    padding-right: 40px;
-    box-sizing: border-box;
+    background: rgba(255,255,255,0)
+
 }
 
 header{
@@ -46,7 +45,7 @@ header{
 
 header h1 {
     margin: 0;
-    color: #173dd4;
+    color: #353535;
     font-weight: normal;
     font-size: 165%;
 }
@@ -58,7 +57,6 @@ header p {
 
 .content-area {
     border-top: 3px solid #a3b6ff;
-    border-bottom: 3px solid #a3b6ff;
 }
 
 .main-area{
@@ -66,7 +64,15 @@ header p {
     float: left;
     padding-right: 40px;
     box-sizing: border-box;
+    color: #d9d9d9;
 }
+
+@media screen and (max-height: 450px) {
+  .siitenav {padding-top: 15px;}
+  .sitenav a {font-size: 18px;}
+}
+
+
 
 .sidebar {
     width: 34%;
@@ -80,7 +86,16 @@ header p {
 
 /* Site Navigation */
 .site-nav {
-    margin-top: 20px;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0) 100%);
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
 .site-nav ul {
@@ -95,19 +110,14 @@ header p {
 }
 
 .site-nav a{
-    display: block;
-    color: #a3b6ff;
+    padding: 6px 6px 6px 32px;
     text-decoration: none;
-    padding: 10px 20px;
-    border: 3px solid #a3b6ff;
-    border-bottom: none;
-    opacity: 0.3;
-    transition: all 1s ease;
+    color: #818181;
+    display: block;
 }
 
 .site-nav a:hover {
-    opacity: 1;
-    background-color: #3858d6;
+    color: #f1f1f1;
 }
 /*End Site Navigation */
 
@@ -118,6 +128,7 @@ header p {
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
 
 .group:before,
 .group:after {
